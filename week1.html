@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 1: From Data to Insight - Information Management</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        }
+        
+        /* Custom styles for enhanced readability */
+        .lesson-content {
+            line-height: 1.7;
+        }
+        
+        .definition-box {
+            transition: all 0.3s ease;
+        }
+        
+        .definition-box:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .exercise-box {
+            background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+        }
+        
+        .figure-placeholder {
+            background-image: repeating-linear-gradient(
+                45deg,
+                #f8fafc,
+                #f8fafc 10px,
+                #e2e8f0 10px,
+                #e2e8f0 20px
+            );
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 min-h-screen">
+    <!-- Main Container -->
+    <div class="max-w-4xl mx-auto p-8 bg-white rounded-xl shadow-lg my-8">
+        
+        <!-- Header Section -->
+        <header class="mb-8">
+            <div class="text-center mb-6">
+                <h1 class="text-4xl font-bold text-gray-800 mb-3">Lesson 1: From Data to Insight</h1>
+                <p class="text-lg text-gray-600 mb-2">Information Management: Introduction to Information Systems & the Value of Data</p>
+                <div class="text-sm text-gray-500 space-y-1">
+                    <p><strong>Course:</strong> Information Management (2nd Year College)</p>
+                    <p><strong>Reference:</strong> Chapter 1, <em>Management Information Systems - Managing the Digital Firm, 17th ed.</em></p>
+                    <p><strong>Duration:</strong> 20 Minutes</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Introduction -->
+        <section class="lesson-content mb-8">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">The Ubiquitous Information System</h2>
+            
+            <p class="text-gray-700 mb-4">
+                Imagine walking into your favorite retail store or opening a shopping app on your phone. Within seconds, you're presented with personalized recommendations, real-time inventory updates, and targeted promotions that seem perfectly suited to your preferences. Have you ever wondered how these systems "know" what to show you? How does a store manage to keep your favorite items in stock while avoiding overstock of unpopular products?
+            </p>
+            
+            <p class="text-gray-700 mb-4">
+                The answer lies in the sophisticated <strong>information systems</strong> that operate behind the scenes. These systems are constantly collecting raw <strong>data</strong>—your clicks, scans, purchase history, and even your movement patterns within the store—and transforming this data into useful <strong>information</strong> that drives business decisions. This transformation from raw data to actionable insights is at the heart of modern information management and will be the focus of our exploration today.
+            </p>
+            
+            <p class="text-gray-700 mb-6">
+                In this lesson, we'll demystify this process by working with data that's familiar to all of us—your pre-test results. Just as retailers analyze customer data to improve their operations, we'll analyze class performance data to gain insights that can help improve our learning experience. This hands-on approach will give you a practical understanding of how raw data becomes valuable <strong>business intelligence</strong>.
+            </p>
+        </section>
+
+        <!-- Learning Objectives -->
+        <div class="bg-blue-50 border-l-4 border-blue-400 p-4 my-6 rounded-r-lg">
+            <h3 class="text-lg font-semibold text-blue-800 mb-3">After this lesson, you will be able to:</h3>
+            <ul class="text-blue-700 space-y-2">
+                <li class="flex items-start">
+                    <span class="text-blue-500 mr-2">•</span>
+                    <span>Differentiate between <strong>data</strong> and <strong>information</strong> with clear, practical examples</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-blue-500 mr-2">•</span>
+                    <span>Understand how information systems transform raw data into valuable insights that support business objectives</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-blue-500 mr-2">•</span>
+                    <span>Apply data analysis principles to extract meaningful information from real datasets</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Main Content Section 1: Core Concepts -->
+        <section class="lesson-content mb-8">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-6">The Core of Information Management</h2>
+            
+            <p class="text-gray-700 mb-6">
+                To understand information management, we must first grasp the fundamental distinction between two key concepts that are often confused: data and information. While these terms are frequently used interchangeably in everyday conversation, they represent distinctly different stages in the knowledge creation process.
+            </p>
+
+            <!-- Figure Placeholder -->
+            <div class="figure-placeholder border-2 border-dashed border-gray-300 p-8 text-center text-gray-500 mb-6 rounded-lg">
+                <div class="text-lg font-medium mb-2">[Textbook Figure 1.3: Data vs. Information]</div>
+                <div class="text-sm">Visual representation of the data-to-information transformation process</div>
+            </div>
+
+            <!-- Data Definition -->
+            <div class="definition-box bg-red-50 border border-red-200 rounded-md p-6 my-6">
+                <h4 class="text-lg font-semibold text-red-800 mb-3">🔢 Data: The Raw Material</h4>
+                <p class="text-red-700 mb-3">
+                    <strong>Data</strong> are streams of raw facts representing events occurring in organizations or the physical environment. Think of data as the building blocks—individual, unprocessed elements that, by themselves, may have little meaning.
+                </p>
+                <div class="bg-white p-3 rounded border border-red-100">
+                    <p class="text-red-600 text-sm">
+                        <strong>Example:</strong> Your individual score on the pre-test is a piece of data. The number "85" by itself doesn't tell us much—it's just a raw fact without context.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Information Definition -->
+            <div class="definition-box bg-green-50 border border-green-200 rounded-md p-6 my-6">
+                <h4 class="text-lg font-semibold text-green-800 mb-3">💡 Information: Data with Meaning</h4>
+                <p class="text-green-700 mb-3">
+                    <strong>Information</strong> is data that has been shaped into a meaningful and useful form. Information provides context, reveals patterns, and enables understanding that supports decision-making.
+                </p>
+                <div class="bg-white p-3 rounded border border-green-100">
+                    <p class="text-green-600 text-sm">
+                        <strong>Example:</strong> When we organize all pre-test scores, calculate the class average (78), identify that 85% of students passed, and discover that Question 5 was the most challenging, we've created information that tells a story and guides action.
+                    </p>
+                </div>
+            </div>
+
+            <p class="text-gray-700 mb-6">
+                This transformation process is not automatic—it requires analysis, organization, and interpretation. Information systems are the technological tools and processes that facilitate this transformation, turning vast amounts of raw data into actionable insights that drive business success.
+            </p>
+        </section>
+
+        <!-- Section 2: Strategic Objectives -->
+        <section class="lesson-content mb-8">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-6">Why Information Matters: Strategic Objectives</h2>
+            
+            <p class="text-gray-700 mb-4">
+                Organizations don't invest in information systems and data analysis simply because it's technologically impressive. They do so because information—when properly extracted and applied—enables them to achieve critical strategic business objectives. According to our textbook's framework on page 43, there are six primary strategic objectives that drive information system investments.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-6 mb-6">
+                <div class="bg-purple-50 border border-purple-200 rounded-lg p-5">
+                    <h4 class="font-semibold text-purple-800 mb-2">🎯 Operational Excellence</h4>
+                    <p class="text-purple-700 text-sm">
+                        Improving efficiency and productivity through better processes and information flow.
+                    </p>
+                </div>
+                
+                <div class="bg-indigo-50 border border-indigo-200 rounded-lg p-5">
+                    <h4 class="font-semibold text-indigo-800 mb-2">🤝 Customer Intimacy</h4>
+                    <p class="text-indigo-700 text-sm">
+                        Understanding and serving customers better through personalized experiences and insights.
+                    </p>
+                </div>
+            </div>
+
+            <p class="text-gray-700 mb-4">
+                Let's examine how this works in practice. Consider the supermarket scanner example from our textbook. When you purchase items at a grocery store, each scan generates data: product codes, quantities, timestamps, and payment methods. This raw data, by itself, is just a collection of numbers and codes. However, when analyzed systematically, this data reveals powerful information.
+            </p>
+
+            <p class="text-gray-700 mb-4">
+                The store can achieve <strong>operational excellence</strong> by ensuring they never run out of popular items—the data reveals purchasing patterns that inform inventory management. They can achieve <strong>customer intimacy</strong> by analyzing purchase histories to recommend products that align with individual customer preferences, just like the smart stores mentioned in our opening case study.
+            </p>
+
+            <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 my-6 rounded-r-lg">
+                <p class="text-yellow-800">
+                    <strong>Connection to Our Activity:</strong> In today's exercise, you'll be applying these same principles to achieve <strong>improved decision making</strong>—both for yourselves as students seeking to improve your performance, and for me as an instructor looking to enhance the learning experience for future classes.
+                </p>
+            </div>
+        </section>
+
+        <!-- Practical Application Section -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-6">Practical Application: The Pre-Test Data Challenge</h2>
+            
+            <div class="exercise-box border-l-4 border-green-500 p-6 rounded-r-lg">
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-green-800 mb-4">🔬 Your Mission: Become Business Analysts</h3>
+                    <p class="text-green-700 mb-4">
+                        You now have access to anonymized raw data from our pre-test. Your challenge is to transform this collection of individual scores and responses into meaningful information that could drive better decision-making. You have 15 minutes to work in groups and extract at least three significant insights.
+                    </p>
+                </div>
+
+                <div class="mb-6">
+                    <h4 class="text-lg font-semibold text-green-800 mb-3">📋 Instructions</h4>
+                    <div class="bg-white p-4 rounded border border-green-200">
+                        <p class="text-green-700 mb-3">
+                            Approach this exercise as professional business analysts would approach a client dataset. Your goal is not simply to calculate numbers, but to uncover insights that tell a story and suggest actionable next steps.
+                        </p>
+                        <p class="text-green-700">
+                            <strong>Remember:</strong> You're transforming data (individual scores) into information (insights about class performance, learning patterns, and areas for improvement).
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mb-6">
+                    <h4 class="text-lg font-semibold text-green-800 mb-3">❓ Guiding Questions</h4>
+                    <div class="bg-white p-4 rounded border border-green-200">
+                        <p class="text-green-700 mb-3">To help structure your analysis, consider investigating:</p>
+                        <ul class="text-green-600 space-y-2 ml-4">
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2">•</span>
+                                <span><strong>Central Tendencies:</strong> What is the class average, median, and range of scores? What does this tell us about overall preparedness?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2">•</span>
+                                <span><strong>Performance Distribution:</strong> What percentage of the class passed? Are scores clustered or widely distributed?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2">•</span>
+                                <span><strong>Content Analysis:</strong> Which specific questions were most challenging? Which were easiest? What topics need reinforcement?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2">•</span>
+                                <span><strong>Pattern Recognition:</strong> Is there a correlation between performance on different sections (e.g., terminology vs. conceptual understanding)?</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-green-100 border border-green-300 p-4 rounded">
+                    <h4 class="text-lg font-semibold text-green-800 mb-2">📊 Expected Deliverable</h4>
+                    <p class="text-green-700">
+                        Your final output should not be a spreadsheet full of calculations, but rather clear, well-articulated sentences of <strong>information</strong> that could help us make better decisions about how to structure and focus our remaining course sessions.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Summary Section -->
+        <section class="lesson-content mb-8">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-6">Summary & Key Takeaways</h2>
+            
+            <div class="bg-gray-50 p-6 rounded-lg mb-6">
+                <ul class="space-y-3 text-gray-700">
+                    <li class="flex items-start">
+                        <span class="text-blue-500 mr-3 mt-1">✓</span>
+                        <span><strong>Data vs. Information:</strong> Data consists of raw facts, while information is data that has been processed and organized to provide meaning and context for decision-making.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-500 mr-3 mt-1">✓</span>
+                        <span><strong>Information Systems Purpose:</strong> Organizations invest in information systems not for technological novelty, but to achieve strategic business objectives like operational excellence and customer intimacy.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-500 mr-3 mt-1">✓</span>
+                        <span><strong>Transformation Process:</strong> The conversion from data to information requires systematic analysis, organization, and interpretation—skills that are valuable in any professional context.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-500 mr-3 mt-1">✓</span>
+                        <span><strong>Practical Application:</strong> These principles apply beyond business contexts—they're essential for academic success, research, and informed decision-making in all areas of life.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-blue-50 border-l-4 border-blue-400 p-4 rounded-r-lg">
+                <h4 class="text-lg font-semibold text-blue-800 mb-2">🔮 Looking Ahead</h4>
+                <p class="text-blue-700">
+                    In our next session, we'll reconvene to discuss the insights your groups discovered through the pre-test data analysis. Come prepared to share your most significant finding and the specific decisions or actions it could inform. This discussion will demonstrate how information drives strategy and decision-making in real-world scenarios.
+                </p>
+            </div>
+        </section>
+
+        <!-- Key Terms Section -->
+        <section class="lesson-content">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-6">Key Terms</h2>
+            
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <h4 class="font-semibold text-gray-800 mb-2">Data</h4>
+                    <p class="text-gray-600 text-sm">Streams of raw facts representing events occurring in organizations or the physical environment; unprocessed information elements.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <h4 class="font-semibold text-gray-800 mb-2">Information</h4>
+                    <p class="text-gray-600 text-sm">Data that has been shaped into a meaningful and useful form through processing, organization, and analysis.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <h4 class="font-semibold text-gray-800 mb-2">Information Systems</h4>
+                    <p class="text-gray-600 text-sm">Technological tools and processes that collect, process, store, and distribute information to support decision-making and coordination.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <h4 class="font-semibold text-gray-800 mb-2">Business Intelligence</h4>
+                    <p class="text-gray-600 text-sm">Information and insights derived from data analysis that inform strategic business decisions and improve organizational performance.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <h4 class="font-semibold text-gray-800 mb-2">Operational Excellence</h4>
+                    <p class="text-gray-600 text-sm">A strategic objective focused on improving efficiency, productivity, and process optimization through better information management.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <h4 class="font-semibold text-gray-800 mb-2">Customer Intimacy</h4>
+                    <p class="text-gray-600 text-sm">A strategic objective focused on understanding and serving customers better through personalized experiences and insights.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="mt-12 pt-8 border-t border-gray-200 text-center">
+            <p class="text-gray-500 text-sm">
+                © 2025 Information Management Course | Lesson 1: From Data to Insight
+            </p>
+            <p class="text-gray-400 text-xs mt-2">
+                Reference: Laudon & Laudon, <em>Management Information Systems - Managing the Digital Firm, 17th ed.</em>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
